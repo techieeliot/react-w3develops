@@ -1,101 +1,26 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>React freeCodeCamp for w3Develops</title>
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    
-    <!-- Don't use this in production: -->
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-   
+    <title>freeCodeCamp and w3Develops</title>
   </head>
-
   <body>
-    <div id="challenge-node">
-        
-    </div>
 
+    <h2>w3Develops using Reactjs</h2>
+    <p>Check the code</p>
+    <p>We left off at: </p>
+
+    <div id='challenge-node'></div>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="like_button_container"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
     <script src="20190424react.js"></script>
 
-
-    <!--<script type="text/babel">
-    //React: Create a Complex JSX Element
-      // write your code here
-      const JSX = (
-          <div>
-              {/* w3develops was here */}
-              <h1>w3develops</h1>
-              <p>good guys</p>
-
-              <ul> 
-                  <li>tamari</li>
-                  <li>andrew</li>
-                  <li>mesfin</li>
-              </ul>
-
-              {/*Learn About Self-Closing JSX Tags*/}
-              <h2>Welcome to React!</h2> <br />
-              <p>Be sure to close all tags!</p>
-              <hr />
-
-          </div>
-        )
-
-      class MyComponent extends React.Component {
-      constructor(props) {
-        super(props);
-      }
-      render() {
-        // change code below this line
-
-        return (
-          <div>
-          <h1>Hello React!</h1>
-          </div>
-        )
-  
-      }
-    }
-      //under the hood
-      ReactDOM.render(
-        <MyComponent />,
-        document.getElementById('root')
-      );
-    };
-    //  var w3Develops = 'Jon';
-
-    //  console.log(w3Develops);
-
-    //  var w3Develops = 'Jonathan';
-
-    //  console.log(w3Develops);
-
-    //  const PatP = "Pat";
-    //  console.log(PatP);
-
-    //   PatP = "Patrick";
-
-    //  console.log(PatP);
-
-    // class is no longer used in JSX for rendering. Naming conventions are camelCase and 
-    // therefore class becomes className, etc.
-
-    //Learn About Self-Closing JSX Tags
-
-    </script>-->
-    <!--
-      Note: this page is a great way to try React but it's not suitable for production.
-      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
-
-      Read this section for a production-ready setup with JSX:
-      https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
-
-      In a larger project, you can use an integrated toolchain that includes JSX instead:
-      https://reactjs.org/docs/create-a-new-react-app.html
-
-      You can also use React without JSX, in which case you can remove Babel:
-      https://reactjs.org/docs/react-without-jsx.html
-    --> 
   </body>
 </html>
