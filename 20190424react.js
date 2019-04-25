@@ -167,37 +167,61 @@ class ReturnTempPassword extends React.Component {
 //********** React: Review Using Props with Stateless Functional Components
 //Campsite and Camper components
   
-  class CampSite extends React.Component {
+//   class CampSite extends React.Component {
+//     constructor(props) {
+//       super(props);
+//     }
+//     render() {
+//       return (
+//         <div>
+//           <Camper />
+//         </div>
+//       );
+//     }
+//   };
+//   // change code below this line
+  
+  
+  
+//   const Camper = (props) => {
+//     return (
+//       <div> 
+//         <p>{props.name}
+//         </p>
+//       </div>
+//     ) 
+  
+//   }
+  
+//   Camper.defaultProps = {
+//     name: 'CamperBot'
+//   }
+  
+//   Camper.propTypes = {
+//     name: PropTypes.string.isRequired
+//   }
+
+  // stateful
+
+
+class StatefulComponent extends React.Component {
     constructor(props) {
       super(props);
+      // initialize state here
+      this.state = {
+  
+        name: "Srikanth"
+      }
     }
     render() {
       return (
         <div>
-          <Camper />
+          <h1>{this.state.name}</h1>
         </div>
       );
     }
   };
-  // change code below this line
-  
-  
-  
-  const Camper = (props) => {
-    return (
-      <div> 
-        <p>{props.name}
-        </p>
-      </div>
-    ) 
-  
-  }
-  
-  Camper.defaultProps = {
-    name: 'CamperBot'
-  }
-  
-  Camper.propTypes = {
-    name: PropTypes.string.isRequired
-  }
+
+//  Ended on React: Render State in the User Interface
+
   
