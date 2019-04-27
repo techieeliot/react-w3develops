@@ -1,9 +1,8 @@
 import React from "react"
-import ReactDOM from "react-dom"
 
 //React: Use State to Toggle an Element
 
-class MyComponent extends React.Component {
+class Toggle extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -38,3 +37,4 @@ class MyComponent extends React.Component {
     }
   };
 
+  export default Toggle;
