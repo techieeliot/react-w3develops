@@ -1,7 +1,5 @@
 import React from "react"
 
-
-
   class ThreeCounters extends React.Component {
     constructor(props) {
       super(props);
@@ -55,13 +53,13 @@ import React from "react"
     render() {
       return (
         <div>
-            <div id="one">
+            <div id="one float">
                 <button className='inc' onClick={this.increment5}>+5</button>
             </div>  
-            <div id="two">
+            <div id="two float">
                 <button className='inc' onClick={this.increment25}>+25</button>
             </div> 
-            <div id="three">
+            <div id="three float">
                 <button className='inc' onClick={this.increment50}>+50</button>
             </div> 
             <div id="reset">
