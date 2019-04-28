@@ -1,3 +1,5 @@
+import React from "react"
+
 class ControlledInput extends React.Component {
     constructor(props) {
       super(props);
@@ -27,3 +29,5 @@ class ControlledInput extends React.Component {
       );
     }
   };
+
+  export default ControlledInput;
