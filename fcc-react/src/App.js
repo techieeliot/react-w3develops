@@ -1,10 +1,11 @@
 import React from "react"
-import ThreeCounters from "./three_counters"
-//React: Jemal's Mockup Exercise
+import ControlledInput from "./ControlledInput"
+//React: Create a Controlled Input
+
 const App = () => {
   return(
     <div>
-      <ThreeCounters />
+      <ControlledInput />
     </div>
   ) 
 }
