@@ -2,7 +2,7 @@ import React from "react"
 
 
 
-  class Counter extends React.Component {
+  class ThreeCounters extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -43,8 +43,15 @@ import React from "react"
     render() {
       return (
         <div>
-          <button className='inc' onClick={this.increment}>Increment!</button>
-          <button className='dec' onClick={this.decrement}>Decrement!</button>
+            <div>
+                <button className='inc' onClick={this.increment}>Increment!</button>
+            </div>  
+            <div>
+                <button className='inc' onClick={this.increment}>Increment!</button>
+            </div> 
+            <div>
+                <button className='inc' onClick={this.increment}>Increment!</button>
+            </div> 
           <button className='reset' onClick={this.reset}>Reset</button>
           <h1>Current Count: {this.state.count}</h1>
         </div>
@@ -52,4 +59,4 @@ import React from "react"
     }
   };
 
-export default Counter;
+export default ThreeCounters;
