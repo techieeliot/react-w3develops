@@ -1,6 +1,6 @@
 import React from "react"
 import ThreeCounters from "./three_counters"
-//React: Use State to Toggle an Element
+//React: Jemal's Mockup Exercise
 const App = () => {
   return(
     <div>
