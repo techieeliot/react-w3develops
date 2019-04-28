@@ -10,17 +10,29 @@ import React from "react"
       };
       // change code below this line
       //bindings
-      this.increment = this.increment.bind(this)
-      this.decrement = this.decrement.bind(this)
+      this.increment5 = this.increment5.bind(this)
+      this.increment25 = this.increment25.bind(this)
+      this.increment50 = this.increment50.bind(this)
       this.reset = this.reset.bind(this)
       // change code above this line
     }
     // change code below this line
     //increment
-    increment(){
+    increment5(){
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + 5
       })
+    }
+
+    increment25(){
+        this.setState({
+          count: this.state.count + 25
+        })
+    }
+    increment50(){
+        this.setState({
+          count: this.state.count + 50
+        })
     }
   
   
@@ -43,17 +55,20 @@ import React from "react"
     render() {
       return (
         <div>
-            <div>
-                <button className='inc' onClick={this.increment}>Increment!</button>
+            <div id="one">
+                <button className='inc' onClick={this.increment5}>+5</button>
             </div>  
-            <div>
-                <button className='inc' onClick={this.increment}>Increment!</button>
+            <div id="two">
+                <button className='inc' onClick={this.increment25}>+25</button>
             </div> 
-            <div>
-                <button className='inc' onClick={this.increment}>Increment!</button>
+            <div id="three">
+                <button className='inc' onClick={this.increment50}>+50</button>
             </div> 
-          <button className='reset' onClick={this.reset}>Reset</button>
-          <h1>Current Count: {this.state.count}</h1>
+            <div id="reset">
+                <h2>Clicked Buttons = {this.state.count}</h2>
+                <button className='reset' onClick={this.reset}>Reset</button>
+            </div> 
+          
         </div>
       );
     }
