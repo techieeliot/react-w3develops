@@ -25,11 +25,11 @@ import React from "react"
   
   
     //decrement
-    decrement() {
-    this.setState({
-      count: this.state.count - 1
-    })
-    }
+    // decrement() {
+    // this.setState({
+    //   count: this.state.count - 1
+    // })
+    // }
   
     //reset
     reset() {
