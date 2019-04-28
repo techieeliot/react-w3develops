@@ -20,6 +20,7 @@ class ControlledInput extends React.Component {
     render() {
       return (
         <div>
+          <h1>React: Create a Controlled Input</h1>  
           { /* change code below this line */}
           <input type="text" value={this.state.input} onChange={this.handleChange}/>
           { /* change code above this line */}
