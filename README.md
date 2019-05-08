@@ -16,8 +16,8 @@ See our progress via a daily YouTube video recording.
 ### Languages and Frameworks
 		* HTML
 		* CSS
-    * JavaScript
-    * Reactjs
+    		* JavaScript
+    		* Reactjs
 
    
 ### API (none used)
